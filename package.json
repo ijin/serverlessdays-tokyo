@@ -1,0 +1,20 @@
+{
+  "name": "serverlessdays-tokyo",
+  "version": "1.0.0",
+  "description": "ServerlessDays Tokyo Website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:ijin/serverlessdays-tokyo.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverlessdays",
+    "Tokyo"
+  ],
+  "author": "Michael H. Oshita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ijin/serverlessdays-tokyo/issues"
+  },
+  "homepage": "https://github.com/ijin/serverlessdays-tokyo#readme"
+}
