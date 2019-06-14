@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only: master
+    docker:
+      - image: cibuilds/hugo:latest
+    working_directory: ~/hugo
+    steps:
+      - checkout
+      - run:
+          name: Git config
+          command: |
+            git config --global user.email "noreply@example.com"
+            git config --global user.name "CircleCI Bot"
+      - run:
+          name: Git submodule
+          command: |
+            git submodule sync
+            git submodule update --init
+      - run:
+          name: Git worktree
+          command: |
+             git worktree add -B gh-pages src/site/public origin/gh-pages
+      - run:
+          name: Hugo build
+          command: |
+            hugo -v -s src/site
+      - add_ssh_keys:
+          fingerprints:
+            - "e7:8d:ec:2d:9a:bd:27:0b:cb:cb:7a:2c:56:cd:3a:84"
+      - deploy:
+          command: |
+            cd src/site/public
+            git add --all
+            git commit --allow-empty -m "Automated publish to gh-pages [ci skip]"
+            git push
+
