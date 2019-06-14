@@ -37,13 +37,13 @@ title = "ServerlessDays Tokyo"
     done = false
 
 [[params.dates]]
-    date = "September 14, 2019"
-    text = "Answer if you are accepted as a speaker or not"
-    done = false
-
-[[params.dates]]
     date = "September 21, 2019"
     text = "Speakers announced"
+    done = false    
+
+[[params.dates]]
+    date = "Octoboer 21, 2019"
+    text = "Serverless Workshops"
     done = false    
 
 [params.venue]
