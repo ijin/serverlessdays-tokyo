@@ -20,7 +20,7 @@ title = "ServerlessDays Tokyo"
     ticketSaleUrl = "https://serverlessdays-stockholm-2019.eventbrite.com"
     cfpDate = "June 17, 2019"
     cfpDate_ja = "2019年6月17日"
-    cfpUrl = "https://www.papercall.io/serverlessdaysstockholm2019"
+    cfpUrl = "https://www.papercall.io/serverlessdaystokyo2019"
     emailForm = "https://forms.gle/WhzcWGyFFtrsWNnw6"
 
 [[params.dates]]
