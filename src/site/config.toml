@@ -24,7 +24,7 @@ title = "ServerlessDays Tokyo"
     emailForm = "https://forms.gle/xCB8wPj48hEf8t8E7"
 
 [[params.dates]]
-    date = "June 17, 2019"
+    date = "June 21, 2019"
     text = "CFP Opens"
     done = false
 
