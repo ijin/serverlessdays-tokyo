@@ -18,15 +18,15 @@ title = "ServerlessDays Tokyo"
     ticketDate = "July 1, 2019"
     ticketDate_ja = "2019年7月1日"
     ticketSaleUrl = "https://serverlessdays-stockholm-2019.eventbrite.com"
-    cfpDate = "June 17, 2019"
-    cfpDate_ja = "2019年6月17日"
+    cfpDate = "June 24, 2019"
+    cfpDate_ja = "2019年6月24日"
     cfpUrl = "https://www.papercall.io/serverlessdaystokyo2019"
     emailForm = "https://forms.gle/xCB8wPj48hEf8t8E7"
 
 [[params.dates]]
-    date = "June 21, 2019"
+    date = "June 24, 2019"
     text = "CFP Opens"
-    done = false
+    done = true
 
 [[params.dates]]
     date = "July 1, 2019"
