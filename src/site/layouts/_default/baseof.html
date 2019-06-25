@@ -18,7 +18,9 @@
   </style>
   {{- block "head" . }}{{- end }}
 	{{ template "_internal/opengraph.html" . }}
-	{{ template "_internal/twitter_cards.html" . }}
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="ServerlessDays Tokyo"/>
+  <meta name="twitter:description" content="A community based conference focusing on Serverless based platforms and technologies. Tokyo, October, 2019"/>
   <meta name="twitter:creator" content="@{{.Site.Params.twitter}}"></meta>
   <meta name="twitter:image" content="https://tokyo.serverlessdays.io{{.Site.Params.backgroundImage}}"></meta>
 
