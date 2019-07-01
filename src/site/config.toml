@@ -16,8 +16,8 @@ title = "ServerlessDays Tokyo"
     thumbnailImage = "/images/tokyo-thumbnail-min.jpg"
     ccLink = "https://creativecommons.org/licenses/by/2.0/"
     prospectus = "https://www.dropbox.com/s/b1rdbmc14fv7lta/ServerlessDaysJapanTour2019_Overview4Sponsors.2019.6.pdf"
-    ticketDate = "July 1, 2019"
-    ticketDate_ja = "2019年7月1日"
+    ticketDate = "early July, 2019"
+    ticketDate_ja = "2019年7月上旬"
     ticketSaleUrl = "https://serverlessdays-stockholm-2019.eventbrite.com"
     cfpDate = "June 24, 2019"
     cfpDate_ja = "2019年6月24日"
@@ -32,7 +32,7 @@ title = "ServerlessDays Tokyo"
     done = true
 
 [[params.dates]]
-    date = "July 1, 2019"
+    date = "early July, 2019"
     text = "Tickets go on sale"
     done = false
 
