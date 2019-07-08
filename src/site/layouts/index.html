@@ -126,7 +126,8 @@
             window.navigator.language ||
             window.navigator.userLanguage ||
             window.navigator.browserLanguage;
-      if ( language !== 'ja' ) {
+
+      if ( language !== 'ja' && language !== 'ja-JP' ) {
           return;
       }
 
