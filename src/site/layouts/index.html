@@ -11,13 +11,14 @@
   <div class="heroContainer" style="background-image: url('{{.Site.Params.backgroundImage}}'); background-position: center;">
     <div class="heroDate">
       <h1>Dates</h1>
-      <ul>
-        <li class="done"><div class="checkmark">✔️</div><div class="text" glot-model="dates-cfp-open">June 24, 2019<br><strong>CFP Opens</strong></div></li>
-        <li><div class="checkmark">️</div><div class="text" glot-model="dates-ticket-sale">July 1, 2019<br><strong>Tickets go on sale</strong></div></li>
-        <li><div class="checkmark">️</div><div class="text" glot-model="dates-cfp-closes">September 7, 2019<br><strong>CFP closes</strong></div></li>
-        <li><div class="checkmark">️</div><div class="text" glot-model="dates-sp-announce">September 21, 2019<br><strong>Speakers announced</strong></div></li>
-        <li><div class="checkmark">️</div><div class="text" glot-model="dates-worksop">Octoboer 21, 2019<br><strong>Serverless Workshops</strong></div></li>
-        <li><div class="checkmark">️</div><div class="text" glot-model="dates-conference">October 22, 2019<br><strong>ServerlessDays Tokyo<br>@ Tabloid</strong></div></li>
+      <ul glot-model="dates">
+        {{ range .Site.Params.dates }}
+        {{ if eq .done true }}
+        <li class="done"><div class="checkmark">✔️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>
+        {{ else }}
+        <li><div class="checkmark">️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>
+        {{ end }}
+        {{ end }}
       </ul>
     </div>
 
@@ -132,23 +133,8 @@
       }
 
       const glot = new Glottologist();
-      glot.assign('dates-cfp-open', {
-        ja: '2019年6月24日<br><strong>CFP募集開始</strong>'
-      })
-      glot.assign('dates-ticket-sale', {
-        ja: '2019年7月1日<br><strong>チケット販売開始</strong>'
-      })
-      glot.assign('dates-cfp-closes', {
-        ja: '2019年9月7日<br><strong>CFP募集締切</strong>'
-      })
-      glot.assign('dates-sp-announce', {
-        ja: '2019年9月21日<br><strong>スピーカー発表</strong>'
-      })
-      glot.assign('dates-worksop', {
-        ja: '2019年10月21日<br><strong>ServerlessDays Tokyoワークショップ@DMMラボ</strong>'
-      })
-      glot.assign('dates-conference', {
-        ja: '2019年10月22日<br><strong>ServerlessDays Tokyoカンファレンスデイ@Tabloid</strong>'
+      glot.assign('dates', {
+          ja:'{{ range .Site.Params.dates_ja }}{{ if eq .done true }}<li class="done"><div class="checkmark">✔️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>{{ else }}<li><div class="checkmark">️</div><div class="text">{{.date}}<br><strong>{{.text}}</strong></div></li>{{ end }}{{ end }}'
       })
       glot.assign('about', {
         ja: '<p>{{.Site.Title}}は開発者による開発者のためのServerlessに関するテクノロジーカンファレンスです。</p><p>私たちは開発者が実際のプロジェクトから得た経験や教訓を共有する実践的なセッションの力を信じ、重要視しています。</p><p>{{.Site.Title}}は世界中で行われているServerlessDays(以前はJeffConfと呼ばれていた)の一つであり、世界中で発展しているServerlessに関連するコミュニティをより発展させるためのイベントの一つです。</p><p>そして、私たちはServerlessDaysの<a href="#coc">行動規範(Code of Condact)</a>を遵守しています。</p>'
