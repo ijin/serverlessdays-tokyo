@@ -44,12 +44,47 @@ title = "ServerlessDays Tokyo"
 [[params.dates]]
     date = "September 21, 2019"
     text = "Speakers announced"
-    done = false    
+    done = false
 
 [[params.dates]]
     date = "Octoboer 21, 2019"
     text = "Serverless Workshops"
-    done = false    
+    done = false
+
+[[params.dates]]
+    date = "Octoboer 22, 2019"
+    text = "Serverless Days Tokyo"
+    done = false
+
+[[params.dates_ja]]
+    date = "2019年6月24日"
+    text = "CFP募集開始"
+    done = true
+
+[[params.dates_ja]]
+    date = "2019年7月上旬"
+    text = "チケット販売開始"
+    done = false
+
+[[params.dates_ja]]
+    date = "2019年9月7日"
+    text = "CFP募集締切"
+    done = false
+
+[[params.dates_ja]]
+    date = "2019年9月21日"
+    text = "スピーカー発表"
+    done = false
+
+[[params.dates_ja]]
+    date = "2019年10月21日"
+    text = "ServerlessDays Tokyoワークショップ@DMMラボ"
+    done = false
+
+[[params.dates_ja]]
+    date = "2019年10月22日"
+    text = "ServerlessDays Tokyoカンファレンスデイ@Tabloid"
+    done = false
 
 [params.venue]
     name = "Tabloid"
@@ -57,4 +92,3 @@ title = "ServerlessDays Tokyo"
     map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.126565078398!2d139.75658121555043!3d35.6492532393319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bcc42bb35e5%3A0x8ea7e1f945212f14!2z44K_44OW44Ot44Kk44OJ!5e0!3m2!1sja!2sjp!4v1560784676185!5m2!1sja!2sjp"
     text = "Location: 2 Chome-6-24 Kaigan, Minato City, Tokyo 105-0022, Japan"
     text_ja = "所在地：〒105-0022 東京都港区海岸2-6-24"
-
