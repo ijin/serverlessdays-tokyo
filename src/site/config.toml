@@ -32,7 +32,7 @@ title = "ServerlessDays Tokyo"
     done = true
 
 [[params.dates]]
-    date = "early July, 2019"
+    date = "late July, 2019"
     text = "Tickets go on sale"
     done = false
 
