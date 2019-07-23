@@ -62,7 +62,7 @@ title = "ServerlessDays Tokyo"
     done = true
 
 [[params.dates_ja]]
-    date = "2019年7月上旬"
+    date = "2019年7月下旬"
     text = "チケット販売開始"
     done = false
 
