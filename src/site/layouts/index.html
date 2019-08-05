@@ -85,7 +85,7 @@
       <div class="image"><img width="150" height="150" style="padding: 30px;" src="/images/owl_mascot.svg"></div>
     </div>
     <div class="text" glot-model="tickets">
-      <p>Tickets will be available for sale at {{.Site.Params.ticketSaleUrl}}.</p>
+      <p>Tickets can be purchased <a href="{{.Site.Params.ticketDate}}" target="_blank">here.</a></p>
       <p>We seek to create a diverse and inclusive community for serverless developers. We want to include and encourage people of all races, ethnicities, genders, religions, sexual orientations, abilities, technical experience and ages.</p>
     </div>
   </div>
@@ -148,7 +148,7 @@
         ja: '<p>Call for Papersは{{.Site.Params.cfpDate_ja}}に<a href="{{.Site.Params.cfpUrl}}" target="_blank">Papercall</a>で公開されます。</p>'
       })
       glot.assign('tickets', {
-        ja: '<p>チケットは{{.Site.Params.ticketSaleUrl}}から購入できまです。</p><p>私たちは、多様で包括的なServerless開発者によるコミュニティの構築を目指しています。私たちは、あらゆる人種、民族、性別、宗教、性的指向、能力、技術的なキャリア、および年齢の人々を歓迎します。</p>'
+      ja: '<p>チケットは<a href="{{.Site.Params.ticketSaleUrl}}" target="_blank">こちら</a>から購入できまです。</p><p>私たちは、多様で包括的なServerless開発者によるコミュニティの構築を目指しています。私たちは、あらゆる人種、民族、性別、宗教、性的指向、能力、技術的なキャリア、および年齢の人々を歓迎します。</p>'
       })
       glot.assign('sponsors', {
         ja: '<p>スポンサーとしての参加をご希望される場合、<a href="{{.Site.Params.prospectus}}">スポンサー募集要項</a>をダウンロードするか、<a href="{{.Site.Params.email}}">{{.Site.Params.email}}</a>までメールをお送りください。</p>'
