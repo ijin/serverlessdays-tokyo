@@ -18,7 +18,7 @@ title = "ServerlessDays Tokyo"
     prospectus = "https://www.dropbox.com/s/b1rdbmc14fv7lta/ServerlessDaysJapanTour2019_Overview4Sponsors.2019.6.pdf"
     ticketDate = "August 5, 2019"
     ticketDate_ja = "2019年8月5日"
-    ticketSaleUrl = "https://serverlessdays-stockholm-2019.eventbrite.com"
+    ticketSaleUrl = "https://eventregist.com/e/slstokyo19"
     cfpDate = "June 24, 2019"
     cfpDate_ja = "2019年6月24日"
     cfpEndDate = "September 7, 2019"
@@ -34,7 +34,7 @@ title = "ServerlessDays Tokyo"
 [[params.dates]]
     date = "August 5, 2019"
     text = "Tickets go on sale"
-    done = false
+    done = true
 
 [[params.dates]]
     date = "September 7, 2019"
