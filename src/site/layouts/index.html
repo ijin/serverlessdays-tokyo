@@ -85,9 +85,8 @@
       <div class="image"><img width="150" height="150" style="padding: 30px;" src="/images/owl_mascot.svg"></div>
     </div>
     <div class="text" glot-model="tickets">
-      <p>Tickets will be available for sale at {{.Site.Params.ticketDate}}.</p>
+      <p>Tickets will be available for sale at {{.Site.Params.ticketSaleUrl}}.</p>
       <p>We seek to create a diverse and inclusive community for serverless developers. We want to include and encourage people of all races, ethnicities, genders, religions, sexual orientations, abilities, technical experience and ages.</p>
-      <p>Meanwhile, you can <a href="{{.Site.Params.emailform}}" target="_blank">leave your email</a> to get notified when Call for Papers open, tickets go on sale, and when the agenda is published, and remember to follow us on Twitter <a href="https://twitter.com/{{.Site.Params.twitter}}" title="{{.Site.Title}} on Twitter " target="_blank ">@{{.Site.Params.twitter}}</a>.</p>
     </div>
   </div>
 
@@ -149,7 +148,7 @@
         ja: '<p>Call for Papersは{{.Site.Params.cfpDate_ja}}に<a href="{{.Site.Params.cfpUrl}}" target="_blank">Papercall</a>で公開されます。</p>'
       })
       glot.assign('tickets', {
-        ja: '<p>チケットの販売は{{.Site.Params.ticketDate_ja}}から開始する予定です。</p><p>私たちは、多様で包括的なServerless開発者によるコミュニティの構築を目指しています。私たちは、あらゆる人種、民族、性別、宗教、性的指向、能力、技術的なキャリア、および年齢の人々を歓迎します。</p><p><a href="{{.Site.Params.emailform}}" target="_blank">メールアドレスをスタッフに知らせる</a>、または<a href="https://twitter.com/{{.Site.Params.twitter}}" title="{{.Site.Title}} on Twitter " target="_blank ">@{{.Site.Params.twitter}}</a>をフォローすることで、Call for Papersが公開された、チケットが販売された、アジェンダが公開された際に通知を受け取ることができます。</p>'
+        ja: '<p>チケットは{{.Site.Params.ticketSaleUrl}}から購入できまです。</p><p>私たちは、多様で包括的なServerless開発者によるコミュニティの構築を目指しています。私たちは、あらゆる人種、民族、性別、宗教、性的指向、能力、技術的なキャリア、および年齢の人々を歓迎します。</p>'
       })
       glot.assign('sponsors', {
         ja: '<p>スポンサーとしての参加をご希望される場合、<a href="{{.Site.Params.prospectus}}">スポンサー募集要項</a>をダウンロードするか、<a href="{{.Site.Params.email}}">{{.Site.Params.email}}</a>までメールをお送りください。</p>'
