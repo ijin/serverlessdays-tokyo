@@ -10,6 +10,10 @@
   border-color: #ffffff;
 }
 
+.secondaryBorder {
+  border-color: maroon;
+}
+
 .textBlackColor,
 .textBlackColor a {
   color: #001f3f;
@@ -23,6 +27,10 @@
 .textSecondaryColor,
 .textSecondaryColor a {
   color: maroon;
+}
+
+.b--secondary {
+  border-color: maroon;
 }
 
 .primaryTokyoColor {
@@ -60,12 +68,14 @@
 }
 
 @media screen and (min-width: 60em) {
+
   .pos-unicorn img,
   .pos-owl img,
   .pos-anteater img {
     width: 160px;
     height: auto;
   }
+
   .pos-unicorn {
     right: 88px;
     bottom: -160px;
@@ -94,6 +104,7 @@
   right: 0;
   bottom: -112px;
 }
+
 @media screen and (min-width: 60em) {
   .octo-pos {
     bottom: -160px;
@@ -108,9 +119,13 @@
   background-repeat: no-repeat, no-repeat;
 }
 
-.lh-copy {
-  text-align: justify;
+.speakerBkg .lh-copy,
+.venueBkg .lh-copy {
   line-height: 1.8;
+}
+
+.sponsorLogoBkg .lh-copy {
+  line-height: 1.5;
 }
 
 .heroDate {
@@ -159,6 +174,13 @@
 .heroDate li .text {
   display: block;
   color: #464541;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 60em) {
+  .heroDate li .text {
+    font-size: 24px;
+  }
 }
 
 .heroDate li .text strong {
@@ -215,6 +237,32 @@
   max-width: 400px;
   height: auto;
   object-fit: contain;
+}
+
+.workshopBkg {
+  background-color: #FFFFFF;
+}
+
+.workshopListTitle {
+  width: 80px;
+}
+
+.workshop-unicorn-pos {
+  left: -210px;
+  bottom: -200px;
+}
+
+@media screen and (min-width: 60em) {
+  .workshop-unicorn-pos {
+    left: -160px;
+    bottom: -150px;
+  }
+}
+
+.workshop-unicorn-pos img {
+  width: 300px;
+  height: auto;
+  transform: rotate(-15deg);
 }
 
 .venueBkg {
@@ -327,6 +375,10 @@
   background: #ffffff;
 }
 
+.f8 {
+  font-size: .675rem;
+}
+
 .w-05 {
   width: 5%;
 }
@@ -337,6 +389,10 @@
 
 .w-16 {
   width: 16.5%;
+}
+
+.w-45 {
+  width: 45%;
 }
 
 .h45 {
@@ -401,6 +457,10 @@
     width: 12.5%;
   }
 
+  .w-45-ns {
+    width: 45%;
+  }
+
   .w-05-ns {
     width: 5%;
   }
@@ -415,12 +475,10 @@
     position: absolute;
     right: 0;
     width: 920px;
-    -webkit-clip-path: polygon(
-      40% 0%,
-      calc(100% - 32px) 0%,
-      80% 100%,
-      20% 100%
-    );
+    -webkit-clip-path: polygon(40% 0%,
+        calc(100% - 32px) 0%,
+        80% 100%,
+        20% 100%);
     clip-path: polygon(45% 0%, 100% 0%, 100% 10%, 80% 100%, 20% 100%);
   }
 
