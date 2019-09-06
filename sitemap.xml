@@ -3,18 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tokyo.serverlessdays.io/categories/</loc>
-    <priority>0</priority>
+    <loc>https://tokyo.serverlessdays.io/about/</loc>
+    <lastmod>2019-09-01T16:49:30+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://tokyo.serverlessdays.io/</loc>
-    <priority>0</priority>
+    <lastmod>2019-09-01T16:49:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tokyo.serverlessdays.io/categories/</loc>
   </url>
   
   <url>
     <loc>https://tokyo.serverlessdays.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
