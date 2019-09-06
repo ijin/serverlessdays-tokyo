@@ -8,23 +8,23 @@
   <meta http-equiv="Content-Language" content="en">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="serverless, serverlessdays">
-  <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_96/v1518368948/ALL-NEW_ALL-DIFFERENT_cwm1cv.png">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
   <script src="/glottologist.min.js"></script>
   <script>
     function resizeIframe(e){e.style.height=e.contentWindow.document.body.scrollHeight+"px"}
   </script>
-  <style>
-    .vh-60{height:60vh}.vh-40{height:40vh}.vh-30{height:30vh}.sls-gray{color:#13110c}.sls-btn{color:#19b1a3;border-color:#19b1a3}.sls-border{border-color:#19b1a3}iframe#eventbrite{width:100%;border:0;margin:0;overflow:scroll;min-height:1100px}.serverlessdays-color{color:#0bb9a7}.speaker-img{border-radius:50%;border:2px solid #ddd}.sponsors a{display:inline-block}@media screen and (min-width:30em){.vh-40-ns{height:40vh}}
-  </style>
-  {{- block "head" . }}{{- end }}
-	{{ template "_internal/opengraph.html" . }}
+  <meta property="og:title" content="ServerlessDays Tokyo 2019" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tokyo.serverlessdays.io" />
+<meta property="og:image" content="https://tokyo.serverlessdays.io{{.Site.Params.thumbnailImage}}" />
+<meta property="og:site_name" content="ServerlessDays Tokyo" />
+<meta property="og:description" content="A community based conference focusing on Serverless based platforms and technologies. Tokyo, October, 2019" />
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="ServerlessDays Tokyo"/>
+  <meta name="twitter:title" content="ServerlessDays Tokyo 2019"/>
   <meta name="twitter:description" content="A community based conference focusing on Serverless based platforms and technologies. Tokyo, October, 2019"/>
   <meta name="twitter:creator" content="@{{.Site.Params.twitter}}"></meta>
   <meta name="twitter:image" content="https://tokyo.serverlessdays.io{{.Site.Params.thumbnailImage}}"></meta>
-
+ 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136817767-1"></script>
@@ -38,43 +38,367 @@
   -->
 
 </head>
-<body class="sls-gray">
-  <header>
-    <div class="bg-white">
-      <nav class="top-nav">
-        <div class="logoContainer">
-          <div class="logo"><a href="/" class="verticalCenter"><img src="{{.Site.Params.logo}}" alt="{{.Site.Title}}" width="270"></a></div>
-          <div class="dates bold">{{.Site.Params.date}}</div>
+<body class="avenir w-100 primaryColor">
+  <div class="mainBkg h-100 relative">
+    <div class="fixed-ns flex justify-between content-center f5 f4-ns w-100 tc tr-l pa1 pa2-m pa3-l ph5-l avenir primaryColor z-max">
+      <div>
+        <a href="/">
+          <img src="/images/header_logo.svg" alt="">
+        </a>
+      </div>
+      <span class="dib">
+        <!-- <a id="coc" class="dib ph3 pv2 primaryColor pointer no-underline underline-grow" href="/coc">Code of Conduct</a> -->
+        <a id="tickets" class="dib ph3 pv2 mv0 fw6 primaryColor pointer ba b--transparent br2 no-underline underline-grow v-mid primaryTokyoBkg" href="https://eventregist.com/e/slstokyo19" target="_blank" rel="noopner">Tickets</a>
+      </span>
+    </div>
+    <div class="flex-l w-100 db relative">
+      <div class="w-auto w-10-l dn db-l pt4 pt6-ns">
+      </div>
+      <div class="w-100 w-80-m w-70-l tc tr-l pt4 pt6-ns pb4 pb5-ns z-5 mr-auto ml-auto">
+        <h1 class="avenir mt0 tr f3 f2-ns i mv0 mv1-ns">
+          <img class="v-top-ns cover w-100" src="/images/serverless_days_logo.svg" alt="serverless DAYS TOKYO 2019 22 October">
+        </h1>
+          <p class="fw7 f4 f3-l tc tl-l pb4">One Day. One Track. One Community</p>
+          <div class="w-100 w-40-l tc tl-l">
+           <a class="pv2 ph2 ph4-l f4 no-underline ba br2 b--transparent primaryTokyoBkg primaryColor" href="https://eventregist.com/e/slstokyo19" target="_blank" rel="noopner">Get Tickets</a>
         </div>
-        <div class="menu bold">
-          <a class="no-mobile" href="/#about">About</a>
-          <a class="no-mobile" href="/#venue">Venue</a>
-          <a class="" href="/#agenda">Agenda</a>
-          <a class="no-mobile" href="/#speakers">Speakers</a>
-          <a class="" href="/#sponsors">Sponsors</a>
-          <a class="no-mobile" href="/#coc">CoC</a>
-          <a class="highlight" href="/#tickets">Buy Tickets</a>
+      </div>
+      <div class="w-auto w-10-l dn db-l pt4 pt6-ns">
+      </div>
+      <div class="w-100 w-40-l tr-l v-top cover pa0 z-1">
+          <img src="/images/tokyo_blue.jpg" class="w-100 w-70-l heroImage-l">
+      </div>
+    </div>
+    <div class="absolute pos-unicorn z-3">
+      <img src="/images/unicorn_mascot.png" alt="Unicorn">
+    </div>
+    <div class="absolute pos-owl z-3">
+      <img class="dn db-l" src="/images/main_owl_mascot.png" alt="Owl">
+      <img class="db dn-l" src="/images/owl_mascot.png" alt="Owl">
+    </div>
+    <div class="absolute pos-anteater z-3">
+      <img src="/images/Anteater_mascot.png" alt="Anteater">
+    </div>
+  </div>
+  <div class="contrastBkg contrastColor pa3 db w-100">
+    <div class="flex-l mb2">
+      <div class="w-100 w-05-l dn db-l">
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 ph1 pv3 pa3-ns tl f4 secondaryColor speakerBkg">
+    <div class="container">
+      <div class="flex-ns mv3 mv4-l pt5-l">
+        <div class="w-100 ph3 ph0-ns tc tl-ns pb4-l relative">
+          <h2 class="f2 mv3 mh3 primaryTokyoColor">Speakers & Sponsors</h2>
+          <div class="flex-ns flex-column flex-row-l">
+            <div class="f5 lh-copy mh3-l textBlackColor w-100 w-50-l">
+              <p>ServerlessDays Tokyoは開発者による開発者のためのServerlessに関するテクノロジーカンファレンスです。<br>
+              私たちは開発者が実際のプロジェクトから得た経験や教訓を共有する実践的なセッションの力を信じ、重要視しています。<br>
+              ServerlessDays Tokyoは世界中で行われているServerlessDays（以前はJeffConfと呼ばれていた）のひとつであり、世界中で発展しているServerlessに関連するコミュニティをより発展させるためのイベントです。<br>
+              そして、私たちはServerlessDaysの<a href="#code-of-condact">行動規範（Code of Condact）</a>を遵守しています。</p>
+              <p>スピーカーのCall For Papersは<a href="https://www.papercall.io/slsdaystokyo2019" target="_blank" rel="noopener">Papercall</a>で公開されています。</p>
+              <p>スポンサーとしての参加をご希望される場合、<a href="https://www.dropbox.com/s/b1rdbmc14fv7lta/ServerlessDaysJapanTour2019_Overview4Sponsors.2019.6.pdf" target="_blank" rel="noopener">スポンサー募集要項</a>をダウンロードするか、<a href="mailto:japan@serverlessdays.io" target="_blank" rel="noopener">japan@serverlessdays.io</a>までメールをお送りください。</p>
+            </div>
+            <div class="right-0-l mh3-l tertiaryColor primaryTokyoBkg ba-l br3 b--transparent w-100 w-50-l">
+              <div class="w-100 pt3 tc pt4 pt5-l">
+                <span class="center dib pa2 mv1 v-mid w-45 sponsorLogoBkg">
+                    <a class="no-underline" href="https://azure.microsoft.com/ja-jp/overview/serverless-computing/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/MS_Logo.png" alt="Microsoft">
+                    </a>
+                </span>
+                <span class="center dib pa2 mv1 v-mid w-45 sponsorLogoBkg">
+                    <a class="no-underline" href="https://aws.amazon.com/jp/serverless/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/AWS_logo_white.png" alt="Microsoft">
+                    </a>
+                </span>
+              </div>
+              <div class="w-100 pv3 tc">
+                <span class="center dib pa2 mv1 v-mid w-45 sponsorLogoBkg">
+                    <a class="no-underline" href="https://toreru.jp/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/toreru.png" alt="toreru">
+                    </a>
+                </span>
+              </div>
+              <div class="w-100 pv3 tc">
+                <span class="w-45 center dib pa2 mv1 v-mid sponsorLogoBkg h-100">
+                    <a class="no-underline" href="https://gs2.io/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/gameserverservices-logo.png" alt="Game Server Services">
+                    </a>
+                </span>
+                <span class="w-45 center dib pa2 mv1 v-mid sponsorLogoBkg h-100">
+                    <a class="no-underline" href="https://speee.jp/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/Speee_VI_yokogumi-trimming.png" alt="Speee">
+                    </a>
+                </span>
+                <span class="w-45 center dib pa2 mv1 v-mid sponsorLogoBkg h-100">
+                    <a class="no-underline" href="https://unifa-e.com/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/unifa_logo_rgb_trimming.png" alt="unifa ユニファ">
+                    </a>
+                </span>
+              </div>
+              <div class="w-100 pv3 tc">
+                <span class="w-45 center dib pa2 mv1 v-mid sponsorLogoBkg h-100">
+                    <a class="no-underline" href="https://cloud-partner.jp/" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/cloudpartner-logo.png" alt="Cloud partner">
+                    </a>
+                </span>
+                <span class="w-45 center dib pa2 mv1 v-mid sponsorLogoBkg h-100">
+                    <a class="no-underline" href="https://www.f-secure.com/ja_JP/welcome" target="_blank" rel="noopener">
+                        <img src="/images/sponsors/f-secure_trimming.png" alt="F-Secure">
+                    </a>
+                </span>
+              </div>
+              <div class="w-100 pt3 tc pb4 pb5-l">
+                <span class="w-90 w-45-ns center inline-flex flex-row justify-between items-center pa2 mv1 v-mid sponsorLogoBkg h-100">
+                  <img class="w-16" src="/images/sponsors/nakayama_400.jpg" alt="KEIICHI NAKAYAMA SOLUTION ARCHITECT">
+                  <p class="ma0 f8 w-75 textBlackColor lh-copy tj"><span class="b f7">KEIICHI NAKAYAMA</span><br>
+                    SOLUTION ARCHITECT</p>
+                </span>
+                <span class="w-90 w-45-ns center inline-flex flex-row justify-between items-center pa2 mv1 v-mid sponsorLogoBkg h-100">
+                  <img class="w-16" src="/images/sponsors/junkudo_400.jpg" alt="JUN KUDO CLOUDPACK">
+                  <p class="ma0 f8 w-75 textBlackColor lh-copy tj"><span class="b f7">JUN KUDO</span><br>
+                    CLOUDPACK</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="w-30 w-20-l absolute octo-pos">
+            <img src="/images/octo_mascot.png" alt="Octopus">
+          </div>
         </div>
-      </nav>
+      </div>
     </div>
-  </header>
+  </div>
+  <div class="w-100 ph1 pv3 pa3-ns tl f4 primaryColor agendaBkg">
+    <div class="container">
+      <div class="flex-ns mv3 mv4-l">
+        <div class="w-100 ph3 ph0-ns">
+          <h2 class="f2 pt4 mv3 mh3">Dates</h2>
+          <div class="pv5">
+            <div class="heroDate">
+              <ul glot-model="dates">
+                <li class="done">
+                  <div class="checkmark">✔️</div>
+                  <div class="text">2019年6月24日 : <br class="db dn-l"><strong>CFP募集開始</strong>
+                  </div>
+                </li>
+                <li class="done">
+                  <div class="checkmark">✔️</div>
+                  <div class="text">2019年8月5日 : <br class="db dn-l"><strong>チケット販売開始</strong></div>
+                </li>
+                <li>
+                  <div class="checkmark">️</div>
+                  <div class="text">2019年9月7日 : <br class="db dn-l"><strong>CFP募集締切</strong></div
+                  ></li
+                  ><li>
+                    <div class="checkmark">️</div>
+                    <div class="text">2019年9月21日 : <br class="db dn-l"><strong>スピーカー発表</strong></div>
+                </li>
+                <li>
+                  <div class="checkmark">️</div>
+                  <div class="text">2019年10月21日 : <br class="db dn-l"><strong>ServerlessDays Tokyoワークショップ@DMM.com</strong></div>
+                </li>
+                <li>
+                  <div class="checkmark">️</div>
+                  <div class="text">2019年10月22日 : <br class="db dn-l"><strong>ServerlessDays Tokyoカンファレンスデイ@Tabloid</strong></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 workshopBkg ph1 pv5 pa5-ns tl f4 secondaryColor">
+    <div class="container relative">
+      <div class="flex-ns flex-column flex-row-l mv3 mv4-l">
+        <div class="w-100 h-100 tl ph3 ph0-l pb3 pb0-l">
+          <h2 class="f2 mv3 mh3">Workshops</h2>
+          <p class="f6 mv3 mh3 textBlackColor">ワークショップは10月21日(月)、DMM.comで開催されます。</p>
+          <ul class="list pa0 mh3 f6">
+            <li class="pv2 pv1-l lh-title"><span class="workshopListTitle dib tc secondaryConstrastBkg primaryColor pv1 ph3 mb1 mr2 br4">所在地</span><br class="db dn-l">〒106-6224　東京都港区六本木3-2-1 住友不動産六本木グランドタワー</li>
+            <li class="pv2 pv1-l lh-title"><span class="workshopListTitle dib tc secondaryConstrastBkg primaryColor pv1 ph3 mb1 mr2 br4">交通</span><br class="db dn-l">南北線六本木一丁目駅直結／日比谷線･大江戸線「六本木駅」から徒歩5分</li>
+          </ul>
+          <div class="f5 lh-copy mb4 mh3 flex-ns flex-column flex-row-l secondaryBorder ba br3">
+            <div class="w-100 w-40-l pa4 secondaryConstrastBkg primaryColor br3 br3-l br--left-l br--top">
+              <div class="dib bb b--white b f4">Workshop<span class="ml2 f2">01</span></div>
+              <p class="b">10:00-18:00</p>
+              <h3>AWS Presents, Battle against Massive Load using Your Super Sonic Lambda Function!</h3>
+            </div>
+            <div class="w-100 w-60-l pa4">
+              <p>
+                このワークショップは、大量に投入されるイングレスロードを、いかに高速、かつ効率よく捌くかを参加者間で競うコンペティションスタイルになっています。AWS Lambdaを使って処理ロジックを時間内に記述しましょう。<br>
+                ワークショップの途中で数回、計測を行います。改善を重ねてより高速な処理を作っていきましょう。最終結果は当日終了間際に測定した結果をもとに決めます。詳細は当日発表します。
+              </p>
+              <p>
+                This workshop is a competition for developers who are willing to build a serverless service against massive ingress load. AWS Lambda is a mandatory service to use for this battle. The organizer will measure the service functionality few times during the competition that might motivate you to build more Super Sonic Lambda. That means you have several chances to brush up your Lambda functions better and more powerful. Finally, we announce the winner of this battle at the end of the competition. Further detail of the competition will be announced at the beginning of the day competition starts.
+              </p>
+            </div>
+          </div>
+          <div class="f5 lh-copy mb4 mh3 flex-ns flex-column flex-row-l secondaryBorder ba br3">
+            <div class="w-100 w-40-l pa4 secondaryConstrastBkg primaryColor br3 br3-l br--left-l br--top">
+              <div class="dib bb b--white b f4">Workshop<span class="ml2 f2">02</span></div>
+              <p class="b">10:00-18:00</p>
+              <h3><span class="f2">S.P.E.C. -</span><br>
+                Serverless Performance Empowerment Challenge</h3>
+            </div>
+            <div class="w-100 w-60-l pa4">
+              <p>
+                Serverlessアプリケーションのパフォーマンス向上を競う、何でもありで最強のサーバレスエンジニアを決めるパフォーマンスチューニングバトル・ロワイアル！
+              </p>
+              <p>
+                Serverlessはフルマネージドで無限にスケールするからパフォーマンスチューニングは必要ない？そんなものは幻想です！<br>
+                遅いアプリケーションはクラウド破産を齎し、ユーザ満足度を下げてサービス存続の危機に繋がります。
+              </p>
+              <p>
+                Serverlessによってサーバスペックという物理的な制約からは解き放たれ、純粋にアーキテクチャと実装の力だけでパフォーマンス向上を競う、そんなコンテストが遂にやってきた！
+              </p>
+              <p>
+                それが、 Serverless Performance Empowerment Challenge<br>
+                略して S.P.E.C. Contest です!!
+              </p>
+              <p class="flex justify-end textSecondaryColor">
+                <a class="di no-underline bb b--secondary" href="https://gist.github.com/marcy-terui/eff318e12c1796cf0b5f08f43d7e791e" target="_blank" rel="noopener">詳細はこちら</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute workshop-unicorn-pos">
+        <img src="/images/unicorn_mascot.png" alt="Unicorn">
+      </div>
+    </div>
+  </div>
+  <div class="w-100 ph1 pv3 pa3-ns f5 f4-ns tl f5 f4-ns primaryColor venueBkg">
+    <div class="container relative">
+      <div class="flex-ns flex-column flex-row-l mv3 mv4-l">
+          <div class="w-100 h-100 w-40-l tl ph3 ph0-l pb3 pb0-l">
+              <h2 class="f2 mv3 mh3">Venue</h2>
+              <div class="f5 lh-copy pr3-m pb4 mh3">
+                <p class="textWhiteColor">カンファレンスは<a href="http://www.tabloid-tcd.com" target="_blank" rel="noopener">Tabloid</a>で開催されます。</p>
+                <p>所在地：〒105-0022 東京都港区海岸2-6-24</p>
+                <p>交通
+                  <ul>
+                    <li>ゆりかもめ東京臨海新交通臨海線<br>
+                    「日の出」徒歩1分／「竹芝」徒歩7分</li>
+                    <li>JR山手線、京浜東北線<br>
+                    「浜松町」徒歩12分</li>
+                    <li>東京モノレール羽田線<br>
+                    「モノレール浜松町」徒歩12分</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="mh3">
+                <span>
+                  <a class="pv2 ph3 ph4-ns f5 f4-ns no-underline ba br2 b--transparent mr2 primaryTokyoColor primaryBtnBkg" href="https://goo.gl/maps/v2yMnrbyKJTBGV1Y7" target="_blank" rel="noopener">Directions</a>
+                </span>
+              </div>
+          </div>
+          <div class="w-100 w-40-l db-ns tc tl-m ph2 ph3-m ph0-l mt3 mt5-l z-5">
+              <img class="ba br3 b--transparent pt4 pt0-ns cover" height="320" src="/images/venue.jpg">
+          </div>
+          <div class="bkg-dino z-0 dn db-l">
+            <img src="/images/Dino_mascot.png" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="code-of-condact" class="w-100 ph1 pv5 pa5-ns tl f4 contrastColor cocBkg">
+    <div class="container">
+      <div class="mv3">
+        <div class="w-100 tl tl-m ph2 ph3-m ph0-ns mb4">
+            <h2 class="f2 mv3 mh3 tl primaryTokyoColor">Code of Conduct</h2>
+            <p class="f5 tl mv4 mh3 lh-copy">
+              このカンファレンスに出席するすべての出席者、講演者、スポンサー、そしてボランティアは、<br class="dn db-l">
+              以下の行動規範に同意する必要があります。主催者はイベント全体を通しこの規約を執行します。<br>
+              私たちは参加者全員のために安全な環境を確実なものとするために、すべての参加者からの協力を期待しています。
+            </p>
+            <p class="f5 tl mv2 mh3 lh-copy b">
+              Jeffは「互いに素晴らしい存在であれ」と言っています。
+            </p>
+        </div>
+        <div class="w-100 ph3 mv3">
+          <div class="tl tl-m ph2 ph3-m ph0-ns contrastBorder mb1 ba br4">
+            <div class="w-90 w-80-l mr-auto ml-auto pv4">
+              <span class="f5 workshopListTitle dib tc primaryBkg primaryColor pv1 ph3 mb1 mr2 br4">要約</span>
+              <p class="f5 tl mt2 mb4 pb4 lh-copy bb contrastBorder">
+                私たちのカンファレンスは、性別、性同一性や表現、年齢、性的指向、身体障害、体型、体格、人種、または宗教（あるいは無宗教）にかかわらず、誰もが嫌な思いをすることのない体験を提供したいと考えています。参加者への嫌がらせ行為（ハラスメント）をいかなる形でも容認しません。性的表現を有する発言や画像は、講演、ワークショップ、パーティー、Twitterおよび他のオンラインメディアを含む、あらゆるカンファレンスの場において適切ではありません。これらの規則に違反した参加者は、カンファレンスの開催者の裁量で返金することなく、カンファレンスへの参加をお断りさせていただく可能性があります。
+              </p>
+              <span class="f5 workshopListTitle dib tc primaryBkg primaryColor pv1 ph3 mb1 mr2 br4">全文</span>
+              <p class="f5 tl mv2 lh-copy">
+                嫌がらせには、性別、年齢、性的指向、身体障害、体格、人種、宗教、公共の場での性的なイメージの提示、意図的な脅迫、ストーキング、フォロー、写真や録音による嫌がらせ、講演やその他イベントを中断させるような不快な発言、不適切な身体的接触、歓迎されない性に関する指摘といった行為が含まれます。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                これらの嫌がらせ行為を中止するように求められた参加者は、直ちにそれを遵守することが求められます。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                スポンサーもハラスメント防止ポリシーの対象となります。特に、スポンサーは性的なイメージ、活動、その他の素材を使用するべきではありません。ブースのスタッフ（ボランティアを含む）は、性を強調した衣服/ユニフォーム/コスチュームを使用したり、あるいは性が強調された環境を作ってはいけません。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                参加者が嫌がらせ行為に関与している場合、カンファレンスの開催者は、違反者への警告や返金なしでのカンファレンスへの参加の辞退など、適切と思われる行動を取ることができます。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                あなたが嫌がらせを受けている場合や、他の誰かが嫌がらせを受けている、その他の懸念がある場合は、すぐにカンファレンスの運営スタッフに連絡してください。カンファレンスのスタッフは、スタッフ専用のTシャツを着ていますので、それによって判別することができます。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                カンファレンススタッフは、参加者が宿泊先や会場のセキュリティ機関、または開催地を管轄している法的執行機関への連絡や、案内の提供、またはその他の方法で、カンファレンスの会期中に参加者が心身の安全を感じられるように支援します。私たちはあなたの出席を大切にしています。
+              </p>
+              <p class="f5 tl mv2 lh-copy">
+                私たちは、すべての参加者がカンファレンスやワークショップの会場、カンファレンスに関連する全ての交流イベントなどにおいて、これらの規範に従うことを期待しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 ph1 pv5 pa5-ns tl f4 secondaryColor signupBkg">
+    <div class="container">
+      <div class="flex-ns mv3">
+          <div class="w-100 w-50-l tl tl-m ph2 ph3-m ph0-ns">
+              <h2 class="f2 mv3 mh3 tl">Sign Up</h2>
+              <p class="f5 tl mv4 mh3 lh-copy textSecondaryColor">Call for Papersが公開された、チケットが発売された、およびアジェンダが公開された際に通知を受け取りたい場合は、<a href="https://docs.google.com/forms/d/e/1FAIpQLSePXci-SfvRzkUVlnG9XruZbmE_zsVSxI0VabY0F9tQYzmyrQ/viewform" target="_blank" rel="noopener">メールアドレスをスタッフに知らせる</a>、またはTwitterの<a href="https://twitter.com/serverlessjp" target="_blank" rel="noopener">@serverlessjp</a>アカウントをフォローしてください。</p>
+              <span class="mh3">
+                  <a class="pv2 ph3 ph4-ns f5 f4-ns no-underline ba br2 b--transparent mr2 primaryColor secondaryConstrastBkg" href="https://docs.google.com/forms/d/e/1FAIpQLSePXci-SfvRzkUVlnG9XruZbmE_zsVSxI0VabY0F9tQYzmyrQ/viewform" target="_blank" rel="noopener">Subscribe</a>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
 
-  {{- block "main" . }}{{- end }}
 
-  <footer class="section footer">
-    <div class="row">
-      <div><a class="no-underline" href="mailto:{{.Site.Params.email}}" title="Email us at {{.Site.Params.email}} ">{{.Site.Params.email}}</a></div>
-      <div><a href="https://twitter.com/{{.Site.Params.twitter}}" title="{{.Site.Title}} on Twitter " class="no-underline verticalCenter" target="_blank ">@{{.Site.Params.twitter}}</a></div>
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+    
+    <div class="w-100 pv3 primaryColor footerBkg">
+    <div class="tc pv2 pv4-ns">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_60/v1560783574/Mascots/octo_mascot.png" alt="Octopus">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_55/v1560783574/Mascots/unicorn_mascot.png" alt="Unicorn">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_65/v1560783573/Mascots/Moth_mascot.png" alt="Moth">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_65/v1560783573/Mascots/owl_mascot.png" alt="Owl">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_50/v1560783573/Mascots/Dino_mascot.png" alt="Dino">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_60/v1560783573/Mascots/Anteater_mascot.png" alt="Anteater">
+        
+            <img class="pa2" src="https://res.cloudinary.com/serverlessdays/image/upload/c_scale,w_45/v1560783573/Mascots/robofox.png" alt="Robofox">
+        
     </div>
-    <div class="row mascotte">
-      <div><img width="100" height="141" src="/images/moth_mascot.svg"></div>
-      <div><img width="100" height="141" src="/images/dino_mascot.svg"></div>
-      <div><img width="100" height="141" src="/images/unicorn_mascot.svg"></div>
-      <div><img width="100" height="141" src="/images/owl_mascot.svg"></div>
-      <div><img width="100" height="141" src="/images/anteater_mascot.svg"></div>
-      <div><img width="100" height="141" src="/images/octo_mascot.svg"></div>
+    <div class="tc pv1 pv3-ns">
+            <!-- <a class="no-underline primaryColor pa2 f6" href="/coc">Code of Conduct</a> -->
+
+            <a class="no-underline primaryColor pa2 f6" href="https://eventregist.com/e/slstokyo19" target="_blank" rel="noopner">Tickets</a>
     </div>
-    <div><a class="no-underline">{{.Site.Params.backgroundImageAuthor}} / <a href="{{.Site.Params.ccLink}}">{{.Site.Params.backgroundImageCopyRight}}</a></a></div>
-  </footer>
+    <div class="tc pv1 pv3-ns">
+        <a class="primaryColor no-underline pa2 v-mid f5" href="mailto:tokyo@serverlessdays.io">tokyo@serverlessdays.io</a>
+        <a class="primaryColor no-underline pa2 v-mid f5" href="https://twitter.com/serverlessjp" target="_blank" rel="noopener">@serverlessJP</a>
+        
+    </div>
+</div>
 </body>
 </html>
