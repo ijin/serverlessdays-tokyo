@@ -21,7 +21,7 @@ title = "ServerlessDays Tokyo"
     ticketSaleUrl = "https://eventregist.com/e/slstokyo19"
     cfpDate = "June 24, 2019"
     cfpDate_ja = "2019年6月24日"
-    cfpEndDate = "September 7, 2019"
+    cfpEndDate = "September 8, 2019"
     cfpEndDate_ja = "2019年9月8日"
     cfpUrl = "https://www.papercall.io/slsdaystokyo2019"
     emailForm = "https://forms.gle/xCB8wPj48hEf8t8E7"
@@ -37,9 +37,9 @@ title = "ServerlessDays Tokyo"
     done = true
 
 [[params.dates]]
-    date = "September 7, 2019"
+    date = "September 8, 2019"
     text = "CFP closes"
-    done = false
+    done = done
 
 [[params.dates]]
     date = "September 21, 2019"
