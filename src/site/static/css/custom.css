@@ -112,7 +112,7 @@
 }
 
 .agendaBkg {
-  background-image: url('/images/SERVERLESS_NO_BACKGROUND.png'),
+  background-image: url('/images/severlessdaystokyo-fox-img.png'),
     url('/images/agendaBkg.jpg');
   background-size: auto 100%, cover;
   background-position: center, 50% 50px;
@@ -126,6 +126,10 @@
 
 .sponsorLogoBkg .lh-copy {
   line-height: 1.5;
+}
+
+.sponsorLogoBkg .lh-solid {
+  line-height: 1.4;
 }
 
 .heroDate {
@@ -385,6 +389,14 @@
 
 .w-05 {
   width: 5%;
+}
+
+.w-07 {
+  width: 7%;
+}
+
+.w-08 {
+  width: 8%;
 }
 
 .w-12 {
