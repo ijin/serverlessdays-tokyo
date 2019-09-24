@@ -114,6 +114,18 @@
   background-color: rgba(#0ab9a7, 0.1);
 }
 
+.owl-pos {
+  top: -40px;
+  left: calc(50% - 270px);
+}
+
+@media screen and (min-width: 60em) {
+  .owl-pos {
+    top: -80px;
+    left: calc(50% - 400px);
+  }
+}
+
 .agendaBkg {
   background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
     url('/assets/images/agendaBkg.jpg');
