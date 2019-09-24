@@ -110,12 +110,17 @@
   }
 }
 
+.personalSponsorsBkg {
+  background-color: rgba(#0ab9a7, 0.1);
+}
+
 .agendaBkg {
   background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
     url('/assets/images/agendaBkg.jpg');
   background-size: auto 100%, cover;
   background-position: center, 50% 50px;
   background-repeat: no-repeat, no-repeat;
+  margin-top: -50px;
 }
 
 .contrastBkg .dt-row .dtc:first-child::after {
