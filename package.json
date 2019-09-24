@@ -1,20 +1,44 @@
 {
-  "name": "serverlessdays-tokyo",
-  "version": "1.0.0",
-  "description": "ServerlessDays Tokyo Website",
+  "name": "scss-starter",
+  "version": "0.1.0",
+  "description": "scss starter for Akita WordPress Meetup",
+  "main": "index.js",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:ijin/serverlessdays-tokyo.git"
+    "url": "https://github.com/clown-morish/AWPM02-scss.git"
   },
-  "keywords": [
-    "serverless",
-    "serverlessdays",
-    "Tokyo"
-  ],
-  "author": "Michael H. Oshita",
-  "license": "MIT",
+  "author": "Akita WordPress Meetup",
+  "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/ijin/serverlessdays-tokyo/issues"
+    "url": "https://github.com/clown-morish/AWPM02-scss/issues"
   },
-  "homepage": "https://github.com/ijin/serverlessdays-tokyo#readme"
+  "homepage": "https://akita-wordpress-meetup.doorkeeper.jp/",
+  "dependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "browser-sync": "^2.26.3",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^8.0.0"
+  }
 }

@@ -1,0 +1,575 @@
+.primaryColor {
+  color: #ffffff;
+}
+
+.primaryBkg {
+  background-color: #001f3f;
+}
+
+.primaryBorder {
+  border-color: #ffffff;
+}
+
+.secondaryBorder {
+  border-color: maroon;
+}
+
+.textBlackColor,
+.textBlackColor a {
+  color: #001f3f;
+}
+
+.textWhiteColor,
+.textWhiteColor a {
+  color: #ffffff;
+}
+
+.textSecondaryColor,
+.textSecondaryColor a {
+  color: maroon;
+}
+
+.b--secondary {
+  border-color: maroon;
+}
+
+.primaryTokyoColor {
+  color: #0ab9a7;
+}
+
+.primaryTokyoBkg {
+  background-color: #0ab9a7;
+}
+
+.mainBkg {
+  background: linear-gradient(228.58deg, #001f3f 47.96%, #0ab9a7 106.62%);
+}
+
+.pos-unicorn img,
+.pos-owl img,
+.pos-anteater img {
+  width: auto;
+  height: 140px;
+}
+
+.pos-unicorn {
+  top: calc(50% + 80px);
+  left: calc(20% - 80px);
+}
+
+.pos-owl {
+  bottom: 0;
+  right: calc(20% - 70px);
+}
+
+.pos-anteater {
+  bottom: 16%;
+  right: calc(50% - 80px);
+}
+
+@media screen and (min-width: 60em) {
+  .pos-unicorn img,
+  .pos-owl img,
+  .pos-anteater img {
+    width: 160px;
+    height: auto;
+  }
+
+  .pos-unicorn {
+    right: 88px;
+    bottom: -160px;
+    left: initial;
+    top: initial;
+  }
+
+  .pos-owl {
+    right: 0;
+    top: 80px;
+  }
+
+  .pos-anteater {
+    right: 610px;
+    bottom: 0;
+  }
+}
+
+.speakerBkg,
+.sponsorLogoBkg,
+.primaryBtnBkg {
+  background-color: #ffffff;
+}
+
+.octo-pos {
+  right: 0;
+  bottom: -112px;
+}
+
+@media screen and (min-width: 60em) {
+  .octo-pos {
+    bottom: -160px;
+  }
+}
+
+.agendaBkg {
+  background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
+    url('/assets/images/agendaBkg.jpg');
+  background-size: auto 100%, cover;
+  background-position: center, 50% 50px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.speakerBkg .lh-copy,
+.venueBkg .lh-copy {
+  line-height: 1.8;
+}
+
+.sponsorLogoBkg .lh-copy {
+  line-height: 1.5;
+}
+
+.sponsorLogoBkg .lh-solid {
+  line-height: 1.4;
+}
+
+.heroDate {
+  flex: 0 0 350px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 3px #19b1a3;
+  padding: 5px;
+  font-size: 1.2em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.heroDate h1 {
+  font-size: 1.8em;
+  margin: 0.5em 0 0 0.5em;
+}
+
+.heroDate ul {
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.heroDate li {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.heroDate li .checkmark {
+  display: flex;
+  flex: 0 0 50px;
+  visibility: hidden;
+}
+
+.heroDate li.done .checkmark {
+  display: flex;
+  flex: 0 0 50px;
+  visibility: visible;
+  justify-content: center;
+}
+
+.heroDate li .text {
+  display: block;
+  color: #464541;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 60em) {
+  .heroDate li .text {
+    font-size: 24px;
+  }
+}
+
+.heroDate li .text strong {
+  font-weight: bold;
+  color: #464541;
+}
+
+.heroDate li.done,
+.heroDate li.done .text,
+.heroDate li.done .text strong {
+  color: #19b1a3;
+}
+
+.heroTitle {
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heroTitle .mascotte,
+.heroTitle .title {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroTitle .title h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 1), 0 0 6px rgba(0, 0, 0, 1);
+}
+
+.bkg-dino {
+  position: absolute;
+  top: -32px;
+  left: 58%;
+}
+
+@media screen and (min-width: 60em) {
+  .bkg-dino {
+    left: 58%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .bkg-dino {
+    left: 66%;
+  }
+}
+
+.bkg-dino img {
+  width: 50vw;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.workshopBkg {
+  background-color: #ffffff;
+}
+
+.workshopListTitle {
+  width: 80px;
+}
+
+.workshop-unicorn-pos {
+  left: -210px;
+  bottom: -200px;
+}
+
+@media screen and (min-width: 60em) {
+  .workshop-unicorn-pos {
+    left: -160px;
+    bottom: -150px;
+  }
+}
+
+.workshop-unicorn-pos img {
+  width: 300px;
+  height: auto;
+  transform: rotate(-15deg);
+}
+
+.venueBkg {
+  background-color: #0ab9a7;
+  background-image: url('/assets/images/Dino_mascot.png');
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: center right;
+}
+
+@media screen and (min-width: 60em) {
+  .venueBkg {
+    background-image: none;
+  }
+}
+
+.cocBkg {
+  background-color: #ffffff;
+}
+
+.signupBkg {
+  background-color: #ffffff;
+  background-image: url('/assets/images/Moth_mascot.png');
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: bottom -128px left -120px;
+}
+
+@media screen and (min-width: 60em) {
+  .signupBkg {
+    background-size: 450px auto;
+    background-position: bottom -240px left -160px;
+  }
+}
+
+.footerBkg {
+  background-image: url('/assets/images/footerBkg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 96vw;
+}
+
+@media screen and (min-width: 30em) {
+  .container {
+    max-width: 448px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .container {
+    max-width: 928px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .container {
+    max-width: 1168px;
+  }
+}
+
+.contrastColor {
+  color: #001f3f;
+}
+
+.contrastBkg {
+  background-color: #ffffff;
+}
+
+.contrastBorder {
+  border-color: #001f3f;
+}
+
+.accentColor {
+  color: green;
+}
+
+.accentBkg {
+  background: green;
+}
+
+.secondaryColor {
+  color: maroon;
+}
+
+.secondaryBkg {
+  background: #f3ecda;
+}
+
+.secondaryContrastColor {
+  color: #f3ecda;
+}
+
+.secondaryConstrastBkg {
+  background: maroon;
+}
+
+.tertiaryColor {
+  color: #ffffff;
+}
+
+.tertiaryBkg {
+  background: #1e656d;
+}
+
+.tertiaryContrastColor {
+  color: #1e656d;
+}
+
+.tertiaryContrastBkg {
+  background: #ffffff;
+}
+
+.f8 {
+  font-size: 0.675rem;
+}
+
+.w-05 {
+  width: 5%;
+}
+
+.w-07 {
+  width: 7%;
+}
+
+.w-08 {
+  width: 8%;
+}
+
+.w-12 {
+  width: 12.5%;
+}
+
+.w-16 {
+  width: 16.5%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.h45 {
+  height: 12rem;
+}
+
+.w45 {
+  width: 12rem;
+}
+
+.w35 {
+  width: 6rem;
+}
+
+.shadow-3-light {
+  box-shadow: 2px 2px 4px 2px rgba(119, 119, 255, 0.2);
+}
+
+.shadow-5-light {
+  box-shadow: 4px 4px 8px 0px rgba(119, 119, 255, 0.2);
+}
+
+.shadow-6-light {
+  box-shadow: 0px 0px 24px 24px rgba(255, 255, 255, 0.2);
+}
+
+.shadow-6 {
+  box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-7 {
+  box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 30em) {
+  .heroImage-ns {
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .shiftRight60-ns {
+    margin-right: -60px;
+  }
+
+  .shiftRight75-ns {
+    margin-right: -75px;
+  }
+
+  .shiftRight90-ns {
+    margin-right: -90px;
+  }
+
+  .shiftUp240-ns {
+    margin-top: -240px;
+  }
+
+  .w-16-ns {
+    width: 16.5%;
+  }
+
+  .w-12-ns {
+    width: 12.5%;
+  }
+
+  .w-45-ns {
+    width: 45%;
+  }
+
+  .w-05-ns {
+    width: 5%;
+  }
+
+  .shadow-6-ns {
+    box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .heroImage-l {
+    position: absolute;
+    right: 0;
+    width: 920px;
+    -webkit-clip-path: polygon(
+      40% 0%,
+      calc(100% - 32px) 0%,
+      80% 100%,
+      20% 100%
+    );
+    clip-path: polygon(45% 0%, 100% 0%, 100% 10%, 80% 100%, 20% 100%);
+  }
+
+  .shiftRight60-l {
+    margin-right: -60px;
+  }
+
+  .shiftRight75-l {
+    margin-right: -75px;
+  }
+
+  .shiftRight90-l {
+    margin-right: -90px;
+  }
+
+  .shiftUp240-l {
+    margin-top: -240px;
+  }
+
+  .w-16-l {
+    width: 16.5%;
+  }
+
+  .w-12-l {
+    width: 12.5%;
+  }
+
+  .w-05-l {
+    width: 5%;
+  }
+
+  .w-45-l {
+    width: 45%;
+  }
+
+  .shadow-6-l {
+    box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .shiftRight60-m {
+    margin-right: -60px;
+  }
+
+  .shiftRight75-m {
+    margin-right: -75px;
+  }
+
+  .shiftRight90-m {
+    margin-right: -90px;
+  }
+
+  .shiftUp240-m {
+    margin-top: -240px;
+  }
+
+  .shiftUp90-m {
+    margin-top: -90px;
+  }
+
+  .w-16-m {
+    width: 16.5%;
+  }
+
+  .w-12-m {
+    width: 12.5%;
+  }
+
+  .w-05-m {
+    width: 5%;
+  }
+
+  .shadow-6-m {
+    box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
+  }
+}
