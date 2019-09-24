@@ -118,6 +118,18 @@
   background-repeat: no-repeat, no-repeat;
 }
 
+.contrastBkg .dt-row .dtc:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  height: 6rem;
+  width: 2px;
+  border-radius: 1px;
+  background-color: #0ab9a7;
+}
+
 .speakerBkg .lh-copy,
 .venueBkg .lh-copy {
   line-height: 1.8;

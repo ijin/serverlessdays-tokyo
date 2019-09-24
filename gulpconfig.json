@@ -4,14 +4,14 @@
     "notify": true
   },
   "browserSyncWatchFiles": [
-    "./assets/img/*",
-    "./assets/css/*.min.css",
-    "./assets/js/*.min.js",
+    "./public/assets/img/*",
+    "./public/assets/css/*.min.css",
+    "./public/assets/js/*.min.js",
     "./**/*.php",
     "./**/*.html"
   ],
   "paths": {
-    "js": "./publicassets/js",
+    "js": "./public/assets/js",
     "css": "./public/assets/css",
     "img": "./public/assets/img",
     "imgsrc": "./assets/src/img",
