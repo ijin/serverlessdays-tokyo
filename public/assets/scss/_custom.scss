@@ -141,10 +141,16 @@
   position: absolute;
   top: 1rem;
   right: 0;
-  height: 2rem;
+  height: 6rem;
   width: 2px;
   border-radius: 1px;
   background-color: #0ab9a7;
+}
+
+@media screen and (min-width: 60em) {
+  .contrastBkg .dt-row .dtc:first-child::after {
+    height: 2rem;
+  }
 }
 
 .speakerBkg .lh-copy,
