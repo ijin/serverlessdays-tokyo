@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Git worktree
           command: |
-             git worktree add -B gh-pages src/site/public origin/gh-pages
+             git worktree add -B gh-pages public origin/gh-pages
       - add_ssh_keys:
           fingerprints:
             - "e7:8d:ec:2d:9a:bd:27:0b:cb:cb:7a:2c:56:cd:3a:84"
