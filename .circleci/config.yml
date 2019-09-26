@@ -22,16 +22,12 @@ jobs:
           name: Git worktree
           command: |
              git worktree add -B gh-pages src/site/public origin/gh-pages
-      - run:
-          name: Hugo build
-          command: |
-            hugo -v -s src/site
       - add_ssh_keys:
           fingerprints:
             - "e7:8d:ec:2d:9a:bd:27:0b:cb:cb:7a:2c:56:cd:3a:84"
       - deploy:
           command: |
-            cd src/site/public
+            cd public
             git add --all
             git commit --allow-empty -m "Automated publish to gh-pages [ci skip]"
             git push
