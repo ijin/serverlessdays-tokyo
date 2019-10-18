@@ -67,7 +67,24 @@
   right: calc(50% - 80px);
 }
 
+// トップのスピーカー詳細へのリンク
+.top-speakers-link {
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  //画像のないスピーカー用(名前を中央寄せに)
+  &__no-img {
+    margin: auto;
+  }
+
+}
+
 @media screen and (min-width: 60em) {
+
   .pos-unicorn img,
   .pos-owl img,
   .pos-anteater img {
@@ -345,6 +362,10 @@
   max-width: 96vw;
 }
 
+.speakersBkg {
+  background-color: rgba(maroon, 0.1);
+}
+
 @media screen and (min-width: 30em) {
   .container {
     max-width: 448px;
@@ -354,6 +375,15 @@
 @media screen and (min-width: 60em) {
   .container {
     max-width: 928px;
+  }
+
+  .agendaBkg {
+    background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
+      url('/assets/images/agendaBkg.jpg');
+    background-size: auto 100%, cover;
+    background-position: -10% 50%, 50% 50px;
+    background-repeat: no-repeat, no-repeat;
+    margin-top: -50px;
   }
 }
 
@@ -524,6 +554,10 @@
   .shadow-6-ns {
     box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
   }
+
+  .menu-speakers {
+    margin-right: 65px;
+  }
 }
 
 @media screen and (min-width: 60em) {
@@ -531,12 +565,10 @@
     position: absolute;
     right: 0;
     width: 920px;
-    -webkit-clip-path: polygon(
-      40% 0%,
-      calc(100% - 32px) 0%,
-      80% 100%,
-      20% 100%
-    );
+    -webkit-clip-path: polygon(40% 0%,
+        calc(100% - 32px) 0%,
+        80% 100%,
+        20% 100%);
     clip-path: polygon(45% 0%, 100% 0%, 100% 10%, 80% 100%, 20% 100%);
   }
 
@@ -616,5 +648,10 @@
 
   .shadow-6-m {
     box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-speakers {
+    margin-right: 16px;
+    display: none;
   }
 }
