@@ -75,13 +75,9 @@
   &:hover {
     opacity: 0.5;
   }
-
-  //画像のないスピーカー用(名前を中央寄せに)
-  &__no-img {
-    margin: auto;
-  }
-
 }
+
+
 
 @media screen and (min-width: 60em) {
 
@@ -141,15 +137,6 @@
     top: -80px;
     left: calc(50% - 400px);
   }
-}
-
-.agendaBkg {
-  background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
-    url('/assets/images/agendaBkg.jpg');
-  background-size: auto 100%, cover;
-  background-position: center, 50% 50px;
-  background-repeat: no-repeat, no-repeat;
-  margin-top: -50px;
 }
 
 .contrastBkg .primaryTokyoColor::after {
@@ -376,15 +363,6 @@
   .container {
     max-width: 928px;
   }
-
-  .agendaBkg {
-    background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
-      url('/assets/images/agendaBkg.jpg');
-    background-size: auto 100%, cover;
-    background-position: -10% 50%, 50% 50px;
-    background-repeat: no-repeat, no-repeat;
-    margin-top: -50px;
-  }
 }
 
 @media screen and (min-width: 75em) {
@@ -510,6 +488,8 @@
 }
 
 @media screen and (min-width: 30em) {
+
+
   .heroImage-ns {
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -557,6 +537,15 @@
 
   .menu-speakers {
     margin-right: 65px;
+  }
+
+  .agendaBkg {
+    background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
+      url('/assets/images/agendaBkg.jpg');
+    background-size: auto 100%, cover;
+    background-position: -400px 50%, 50% 50px;
+    background-repeat: no-repeat, no-repeat;
+    margin-top: -50px;
   }
 }
 
@@ -653,5 +642,14 @@
   .menu-speakers {
     margin-right: 16px;
     display: none;
+  }
+
+  .agendaBkg {
+    background-image: url('/assets/images/severlessdaystokyo-fox-img.png'),
+      url('/assets/images/agendaBkg.jpg');
+    background-size: auto 100%, cover;
+    background-position: center, 50% 50px;
+    background-repeat: no-repeat, no-repeat;
+    margin-top: -50px;
   }
 }
