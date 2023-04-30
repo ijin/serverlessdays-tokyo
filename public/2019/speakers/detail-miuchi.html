@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>ServerlessDays Tokyo 2019 Speaker Wataru Miuchi</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,800" rel="stylesheet" />
+  <link rel="stylesheet" href="/2019/assets/css/style.min.css" />
+  <link rel="stylesheet" href="/2019/assets/font-awesome/css/font-awesome.min.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="keywords" content="serverless, serverlessdays" />
+  <link rel="shortcut icon" type="image/x-icon" href="/2019/assets/images/favicon.ico" />
+  <script src="/2019/assets/js/glottologist.min.js"></script>
+  <script>
+    function resizeIframe(e) {
+      e.style.height = e.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+  <meta property="og:title" content="ServerlessDays Tokyo 2019" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tokyo.serverlessdays.io" />
+  <meta property="og:image" content="https://tokyo.serverlessdays.io/2019/assets/images/tokyo-thumbnail-min.png" />
+  <meta property="og:site_name" content="ServerlessDays Tokyo" />
+  <meta property="og:description"
+    content="A community based conference focusing on Serverless based platforms and technologies. Tokyo, October, 2019" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ServerlessDays Tokyo 2019" />
+  <meta name="twitter:description"
+    content="A community based conference focusing on Serverless based platforms and technologies. Tokyo, October, 2019" />
+  <meta name="twitter:creator" content="@serverlessjp" />
+  <meta name="twitter:image" content="https://tokyo.serverlessdays.io/2019/assets/images/tokyo-thumbnail-min.png" />
+</head>
+
+<body class="avenir w-100 primaryColor speakerBkg">
+  <div class="h-100 relative">
+    <div
+      class="fixed-ns flex justify-end justify-between-ns content-center f5 f4-ns w-100 tc tr-l pa1 pa2-ns pa3-l ph5-l avenir primaryColor primaryBkg z-max">
+      <div class="dn db-ns">
+        <a href="/2019/">
+          <img src="/2019/assets/images/header_logo.svg" alt="" />
+        </a>
+      </div>
+      <span class="dib tr">
+        <a id="tickets"
+          class="dib ph3 pv2 mv0 fw6 primaryColor pointer ba b--transparent br2 no-underline underline-grow v-mid primaryTokyoBkg"
+          href="https://eventregist.com/e/slstokyo19" target="_blank" rel="noopner">Tickets</a>
+      </span>
+    </div>
+  </div>
+  <div class="ph3 ph0-ns pt4 pt6-ns w-100">
+    <div class="w-100 w-80-m w-75-l center tl">
+      <div class="w-100 pv2 pv5-ns">
+        <div class="flex flex-wrap">
+          <div class="w-100 w-45-m w-25-l tc center pa2 pa1-m pa0-l tl-ns w5">
+            <img class="w-80 w-50-m w-100-l ba br3 b--transparent center mb3"
+              src="/2019/assets/images/speakers/miuchi_400.jpg" alt="" />
+          </div>
+          <div class="w-100 w-100-m w-75-l ph2 ph3-m ph5-l v-top textBlackColor">
+            <!-- 登壇者名 -->
+            <h1 class="f2 f1-ns pb1 pt0-ns mb1 mt0-ns tc tl-ns">
+              Wataru Miuchi
+            </h1>
+            <!-- 所属/会社 -->
+            <p class="f4 f3-ns pv1-ns mv2-ns tc tl-ns">
+              クレコン リサーチ&コンサルティング株式会社
+            </p>
+
+            <!-- セッションタイトルと概要 -->
+            <div class="w-100 mt4 mb4">
+              <div class="flex flex-column">
+                <div class="db i pv2 w3 pr3 f4 w-100">セッションタイトル</div>
+                <h2 class="db pv2 b f4 mb2 mt0">
+                  AWSでBtoB向けServerless Webアプリケーションを開発
+                </h2>
+
+                <div class="db i w3 pr3 f4 mt3 w-100">セッション概要</div>
+                <div class="db f5 lh-copy markdown-body">
+
+                  <p class="mb0">
+                    <span class="b">はじめに</span><br>
+                    私の所属する会社では、ある業界向けに売上データを提供しています。
+                    その売上データを可視化するツール、BI（Business Intelligence）の開発/運用を行っています。
+                    このBIツールはブラウザ上で操作するWebアプリケーションで、Serverlessで構築しました。
+                    すでに一年以上前から本番稼働しており、多くの企業にご利用頂いています。
+                    なぜServerlessで構築したのか、開発/運用のPros/Consをお話します。
+                  </p>
+                  <p><span class="b">なぜServerlessで構築したのか</p>
+                  <p class="mb0">
+                    <span class="b">コストを抑えたい
+                    </span><br>
+                    BtoBの場合、ローンチ後すぐに利用されるわけではなく、
+                    実際に利用を開始される前からインフラ費用が発生する。
+                  </p>
+                  <p class="mb0">
+                    <span class="b">運用を楽したい
+                    </span><br>
+                    個人的なことでインフラが得意ではない。
+                    どちらかというと好きなアプリケーションの実装に力を入れたい
+                  </p>
+                  <p class="mb0">
+                    <span class="b">本当は…
+                    </span><br>
+                    「コスト抑える」という縛りプレーを入れてのアプリケーション開発は萌える！
+                    という理由で徹底的にコストを抑え、かつ信頼性、耐障害性、可用性の高いサービスを目指しました。
+                  </p>
+
+                  <p class="mb0">
+                    <span class="b">開発では
+                    </span><br>
+                    「AWSを利用しています。
+                    利用サービスは主に以下の通りです。
+                  </p>
+
+                  <ul>
+                    <li>Amazon S3 [データ]</li>
+                    <li>Amazon Cognito　[認証]</li>
+                    <li>Amazon API Gateway　[ルーティング]</li>
+                    <li>AWS Lambda　[処理]</li>
+                    <li>Amazon CloudWatch　[ログ]</li>
+                  </ul>
+
+                  <p class="mt3">
+                    各々の処理の流れは構成図をお見せしてご説明します。<br>
+                    フレームワークはNode.jsの開発経験があるためAWSの提供の「AWS Serverless Express」を利用しています。
+                    サーバーサイドはREST APIに位置付けて、クライアントサイドはSPA(Single Page Application)としています。<br>
+                    Serverlessにおいて、この構成のPros/Consをお伝えします。</p>
+                  <p class="mb0">
+                    <span class="b">運用してみて</span><br>
+                    「実際にサービスをローンチしてからの運用についてお話します。
+                  </p>
+                  <p class="mb0">
+                    <span class="b">で、コストは？</span><br>
+                    オンプレミスとクラウドにおけるコストカットに関しては周知の事実ですが、
+                    今回のようなServerlessの場合、どのくらいのコストカットになったのかをお話します。
+                  </p>
+                  <p class="mb0">
+                    <span class="b">総括</span><br>
+                    アプリケーション自体の品質や、コストについて自身の感想と、会社からの評価など。
+                    また全体を通してWebアプリケーションをServerlessで構築することにおいてのPros/Consをお話します。
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 pv3 primaryColor footerBkg">
+    <div class="tc pv2 pv4-ns">
+      <img class="pa2 w-10" src="/2019/assets/images/octo_mascot.png" alt="Octopus" />
+
+      <img class="pa2 w-08" src="/2019/assets/images/unicorn_mascot.png" alt="Unicorn" />
+
+      <img class="pa2 w-10" src="/2019/assets/images/Moth_mascot.png" alt="Moth" />
+
+      <img class="pa2 w-10" src="/2019/assets/images/owl_mascot.png" alt="Owl" />
+
+      <img class="pa2 w-07" src="/2019/assets/images/Dino_mascot.png" alt="Dino" />
+
+      <img class="pa2 w-10" src="/2019/assets/images/Anteater_mascot.png" alt="Anteater" />
+
+      <img class="pa2 w-08" src="/2019/assets/images/severlessdaystokyo-fox-img.png" alt="Robofox" />
+    </div>
+    <div class="tc pv1 pv3-ns">
+      <a class="no-underline primaryColor pa2 f6" href="https://eventregist.com/e/slstokyo19" target="_blank"
+        rel="noopner">Tickets</a>
+    </div>
+    <div class="tc pv1 pv3-ns">
+      <a class="primaryColor no-underline pa2 v-mid f5"
+        href="mailto:tokyo@serverlessdays.io">tokyo@serverlessdays.io</a>
+      <a class="primaryColor no-underline pa2 v-mid f5" href="https://twitter.com/serverlessjp" target="_blank"
+        rel="noopener">@serverlessJP</a>
+    </div>
+    <a class="no-underline f7">Photo by Moyan Brenn /
+      <a class="no-underline f7" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a></a>
+  </div>
+</body>
+
+</html>
